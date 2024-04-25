@@ -65,7 +65,7 @@ section {
     justify-content: space-between;
 }
 .logo {
-    background: url("../img/logo.svg") no-repeat center;
+    background: url("../img/logo.png") no-repeat center;
     width: 188px;
     height: 32px;
     margin-right: 95px;
