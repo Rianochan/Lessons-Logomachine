@@ -1,37 +1,36 @@
-/*Specification*/
+/*Components*/
+
 body {
-    font-family: "Open Sans", sans-serif;
-    color: #372E46;
-    font-size: 16px;
-    font-weight: 400;
     margin: 0;
     padding: 0;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    color: #372E46;
 }
+
 * {
     box-sizing: border-box;
 }
+
+section {
+    padding-top: 200px;
+}
+
 .container {
     width: 1110px;
     margin: 0 auto;
 }
+
+
+/*Typography*/
 h1, h2, h3, h4 {
     margin: 0;
     font-weight: 600;
 }
-p {
-    margin: 0;
-    padding: 0;
-    letter-spacing: 0.02em;
-}
-ul {
-    margin: 0;
-    padding: 0;
-}
-li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+
 h1 {
     font-size: 55px;
 }
@@ -44,69 +43,105 @@ h3 {
 h4 {
     font-size: 20px;
 }
+
+p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.02em;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 a {
     color: #fff;
     text-decoration: none;
     display: block;
-}
-section {
-    padding-top: 200px;
+    transition: .3s ease;
 }
 
 
-/*Header*/
+
+
+/* --HEADER SECTION -- */
+
 .header-section {
-    background: #FF6200;
     padding: 45px 0;
+
+    background: #FF6200;
 }
 .menu-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.header__nav{
+    display: flex;
+    align-items: center;
+    gap: 95px;
+}
 .logo {
-    background: url("../img/logo.png") no-repeat center;
     width: 188px;
     height: 32px;
-    margin-right: 95px;
+
+    background: url("../img/logo.png") no-repeat center;
 }
 .menu-list {
     display: flex;
     gap: 60px;
 }
+a:hover{
+    color: #e1e1e4;
+    transition: .3s ease;
+}
 
 
-/*offer-section*/
+
+
+/* --OFFER SECTION-- */
+
 .offer-section {
     padding-top: 60px;
 }
 .offer-wrapper {
-    display: flex;
-    align-items: center;
+    display: flex; 
     justify-content: space-between;
+    align-items: center;
 }
 .offer-text{
     margin: 32px 0 43px 0;
+
     letter-spacing: 0em;
 }
 .offer {
     width: 490px;
-    font-size: 20px;
     widows: 445px;
+
+    font-size: 20px;
 }
 .offer-text > span {
     font-weight: 600;
 }
 .offer-btn {
+    padding: 20px 40px;
+
+    font-size: 20px;
+
     color: #000;
     background-color: #fff;
     box-shadow: 0px 0px 31.3px 0px rgba(182, 190, 202, 0.25);
     border-radius: 20px;
     border: 1px solid #FF6200;
-    padding: 20px 40px;
-    font-size: 20px;
-    transition: background-color 0.6s, box-shadow 0.6s;
     cursor: pointer;
+
+    transition: background-color 0.6s, box-shadow 0.6s;
 }
 .offer-btn:hover {
     color: #fff;
@@ -115,7 +150,10 @@ section {
 }
 
 
-/*text-section*/
+
+
+/* --TEXT SECTION-- */
+
 .block-wrapper {
     display: flex;
     justify-content: space-between;
@@ -126,16 +164,17 @@ section {
 .right-block {
     width: 535px;
 }
-.section-title {
-    text-align: center;
-}
 .title-wrapper {
     position: relative;
     margin-bottom: 76px;
 }
+.section-title {
+    text-align: center;
+    margin-bottom: -7px;
+}
+
 .line {
     position: absolute;
-    top: 45px;
     left: 50%;
 }
 .block-title > span {
@@ -146,19 +185,22 @@ section {
 }
 
 
-/*list-section*/
+
+
+/* --LIST SECTION-- */
+
 .left-line {
     left: 48%;
 }
 .list-wrapper {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 .list {
-    width: 337px;
     display: flex;
     flex-direction: column;
+    width: 337px;
     gap: 34px;
 }
 .list-title {
@@ -176,31 +218,39 @@ section {
     flex-direction: column;
 }
 .image-block {
-    width: 451px;
     display: flex;
-    gap: 40px 114px;
     flex-wrap: wrap;
+    width: 451px;
+    gap: 40px 114px;
 }
 
 
-/*Footer*/
+
+
+/* --FOOTER-- */
+
 .footer-section {
-    background: #372E46;
     margin-top: 200px;
     padding: 29px 0;
+
     font-size: 12px;
+
+    background: #372E46;
 }
-.footer-contact {
+.footer__nav{
+    display: flex;
+    align-items: center;
+    gap: 190px;
+}
+.footer__contact {
     display: flex;
     flex-direction: column;
     gap: 7px;
+
     text-align: right;
 }
 .footer-menu-list {
-    flex-direction: column;
-    gap: 7px;
-    height: 38px;
-    flex-wrap: wrap;
-    width: 246px;
-    align-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 7px 140px;
 }
